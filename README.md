@@ -62,6 +62,7 @@ https://gobackup.github.io
 - [Qiniu Kodo](https://www.qiniu.com/products/kodo)
 - [Baidu BOS](https://cloud.baidu.com/product/bos.html)
 - [WebDAV](http://www.webdav.org)
+- [Cafe24 OBS](https://docs.cafe24cloud.com/home/storage/object)
 
 ## Notifier
 

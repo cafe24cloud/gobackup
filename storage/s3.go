@@ -56,6 +56,8 @@ func (s S3) providerName() string {
 		return "DigitalOcean Spaces"
 	case "bos":
 		return "Baidu BOS"
+	case "cafe24":
+		return "Cafe24 Object Storage"
 	}
 
 	return "AWS S3"
@@ -79,6 +81,8 @@ func (s S3) defaultRegion() string {
 		return "nyc1"
 	case "bos":
 		return "bj"
+	case "cafe24":
+		return "cafe24"
 	}
 
 	return "us-east-1"
@@ -100,6 +104,8 @@ func (s S3) defaultEndpoint() *string {
 		return aws.String(fmt.Sprintf("%s.digitaloceanspaces.com", s.viper.GetString("region")))
 	case "bos":
 		return aws.String(fmt.Sprintf("s3.%s.bcebos.com", s.viper.GetString("region")))
+	case "cafe24":
+		return aws.String(fmt.Sprintf("%s.kr.cafe24obs.com", s.viper.GetString("region")))
 	}
 
 	return aws.String("")
